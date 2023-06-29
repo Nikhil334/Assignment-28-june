@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /* ############################### for loop program ################################ */
+        let n = 5;
+        for (let i = 1; i <= n; i++) {
+            for (let j = 0; j < i; j++) {
+                document.write("*");
+            }
+        document.write("<br>");
+        }
+        for (let i = 1; i <= n - 1; i++) {
+            for (let j = 0; j < n - i; j++) {
+                document.write("*");
+            }
+        document.write("<br>");
+        }
+
+        /*############################### while loop program ################################ */
+        var i = 0;
+        while(i <= n) {
+            var j = 0;
+            while(j < i) {
+                document.write("*");
+                j++;
+            }
+            i++;
+        document.write("<br>");
+        }
+        var i = 1;
+        while(i <= n - 1) {
+            var j = 0;
+            while(j < n - i) {
+                document.write("*");
+                j++;
+            }
+            i++;
+        document.write("<br>");
+        }
+
+        /* ###############################Do while loop program ################################ */
+        let sum = 0;
+        let n2= 0;
+        do {
+            sum += n2
+            n2 = parseInt(prompt('Enter a number: '));
+        } while(n2 >= 0)
+
+        document.write(`The sum is ${sum}.`);
+
+        [1,3,4,5,6,7,8].forEach(alert);
+    </script>
+</body>
+</html>

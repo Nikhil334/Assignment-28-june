@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      function toPrint(num){
+        document.write(num+" ");
+      }
+      var Fibbo = [0,1,1,2,3,5,8,13,21,34];
+      Fibbo.forEach(toPrint);
+      document.write("<br>");
+      var res = Fibbo.map(Math.pow);
+      document.write(res);
+      document.write("<br>");
+      Fibbo.map(toPrint);
+      document.write("<br>")
+    </script>
+    <script>
+        const str = ["Hello","Good","Morning","How","Are","You?"];
+        function fullStrReduce(CurrentString, StringFromArray) {
+        return CurrentString +" "+ StringFromArray;
+        }
+        let result = str.reduce(fullStrReduce);
+        document.write(result);
+    </script>
+</body>
+</html>

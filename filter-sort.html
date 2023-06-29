@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const str = ["Hello","Good","Morning","How","Are","You?"];
+        function checklength(str){
+        if(str.length>3){
+        return true;
+        }
+        else{
+          return false;
+        }
+      }
+        let result = str.filter(checklength);
+        
+        document.write(result);
+        document.write("<br>")
+        document.write(str.sort())
+    </script>
+</body>
+</html>
